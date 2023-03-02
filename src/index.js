@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from './pages/Home'
 import Location from './pages/Location'
-import Header from './components/Header'
+import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Error from './components/Error'
 

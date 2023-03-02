@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 25px;
+}
+
+header nav a{
+    margin-right: 57px;
+    text-decoration: none;
+    color: rgba(255, 96, 96, 1);
+}
