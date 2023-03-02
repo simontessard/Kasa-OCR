@@ -5,7 +5,7 @@ import Home from './pages/Home'
 import Location from './pages/Location'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import Error from './components/Error'
+import Error from './components/Error/Error'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
