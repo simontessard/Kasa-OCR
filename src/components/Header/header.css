@@ -1,11 +1,16 @@
 header {
     display: flex;
-    justify-content: flex-end;
-    padding: 57px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 57px;
+    padding-inline: 100px;
 }
 
 header nav a{
-    margin-right: 57px;
     text-decoration: none;
     color: rgba(255, 96, 96, 1);
+}
+
+header nav a:first-child{
+    margin-right: 57px;
 }
