@@ -1,6 +1,9 @@
 .homePage {
     padding-inline: 100px;
     margin-top: 60px;
+}
+
+.homePage-title {
     position: relative;
 }
 
@@ -11,14 +14,8 @@
     border-radius: 25px;
 }
 
-.homePage h1{
-    color: white;
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 48px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.cardContainer {
+    display: flex;
+    padding: 60px;
+    gap : 60px;
 }
