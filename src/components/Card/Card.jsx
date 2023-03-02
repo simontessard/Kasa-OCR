@@ -1,6 +1,5 @@
 import './card.css'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 
 function Card({ title }) {
   return (
