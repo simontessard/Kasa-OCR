@@ -7,9 +7,6 @@ import Header from './components/Header'
 import Footer from './components/Footer/Footer'
 import Error from './components/Error'
 
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
-
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
