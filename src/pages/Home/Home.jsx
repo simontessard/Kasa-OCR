@@ -1,7 +1,6 @@
 import './home.css'
 import Card from '../../components/Card/Card'
 import Banner from '../../components/Banner/Banner'
-import styled from 'styled-components'
 
 function Home() {
   return (
