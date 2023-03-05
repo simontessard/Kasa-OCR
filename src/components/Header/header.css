@@ -6,6 +6,12 @@ header {
     padding-inline: 100px;
 }
 
+@media only screen and (max-width : 720px) {
+    header {
+        padding: 20px;
+    }
+}
+
 header nav a{
     text-decoration: none;
     color: rgba(255, 96, 96, 1);
