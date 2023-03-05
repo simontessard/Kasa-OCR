@@ -31,6 +31,8 @@
         padding-inline: 0;
     }
     .cardContainer {
+        background: white;
+        margin-top: 0;
         padding: 20px;
     }
     .homePage-title {
