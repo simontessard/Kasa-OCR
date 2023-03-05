@@ -5,6 +5,7 @@ import Location from '../../pages/Location'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Error from '../Error/Error'
+import About from '../../pages/About/About'
 
 const Routing = () => {
   return (
@@ -13,6 +14,7 @@ const Routing = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/location/:id" component={Location} />
+        <Route exact path="/about" component={About} />
         <Route component={Error} />
       </Switch>
       <Footer />

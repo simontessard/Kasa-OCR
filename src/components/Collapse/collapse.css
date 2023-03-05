@@ -1,0 +1,40 @@
+.collapse-elements button {
+    background: #FF6060;
+	border: none;
+	padding: 5px;
+	font-family: 'Montserrat';
+    font-size: 24px;
+    color: white;
+	cursor: pointer;
+}
+
+.collapse-elements {
+    margin-bottom: 30px;
+    min-width: 1040px;
+}
+
+.button-bar {
+	cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    padding-inline: 15px;
+    background: #FF6060;
+}
+
+.toggle {
+    max-width: 1000px;
+    background: #F7F7F7;
+    border-radius: 5px;
+    color: #FF6060;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.toggle h4{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+}
