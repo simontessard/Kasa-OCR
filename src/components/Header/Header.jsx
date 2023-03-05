@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './header.css'
 import logo from '../../assets/logo.svg'
 
@@ -7,8 +7,22 @@ function Header() {
     <header>
       <img src={logo} alt="Logo" />
       <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/about">À propos</Link>
+        <NavLink
+          className="no-underline"
+          exact
+          activeClassName="underline"
+          to="/"
+        >
+          Accueil
+        </NavLink>
+        <NavLink
+          className="no-underline"
+          exact
+          activeClassName="underline"
+          to="/about"
+        >
+          À propos
+        </NavLink>
       </nav>
     </header>
   )
