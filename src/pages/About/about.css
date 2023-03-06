@@ -5,3 +5,9 @@
     margin-inline: 50px;
     margin-top: 30px;
 }
+
+@media only screen and (max-width : 720px) {
+    .about {
+        margin-inline: 20px;
+    }
+}
