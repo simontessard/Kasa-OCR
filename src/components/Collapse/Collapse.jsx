@@ -10,18 +10,16 @@ function Collapse(props) {
   }
 
   return (
-    <div className="collapse-container">
-      <div className="collapse-elements">
-        <div onClick={toggle} className="button-bar">
-          <button>{props.title}</button>
-          <img src={arrow} alt="Falaise" />
-        </div>
-        {open && (
-          <div className="toggle">
-            <h4>{props.content}</h4>
-          </div>
-        )}
+    <div className="collapse-elements">
+      <div onClick={toggle} className="button-bar">
+        <button>{props.title}</button>
+        <img src={arrow} alt="Falaise" />
       </div>
+      {open && (
+        <div className="toggle">
+          <h4>{props.content}</h4>
+        </div>
+      )}
     </div>
   )
 }

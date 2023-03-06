@@ -10,22 +10,24 @@
 
 .collapse-elements {
     margin-bottom: 30px;
-    min-width: 1040px;
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .button-bar {
-	cursor: pointer;
-    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+	cursor: pointer;
+    border-radius: 5px;
     padding: 10px;
     padding-inline: 15px;
     background: #FF6060;
 }
 
 .toggle {
-    max-width: 1000px;
     background: #F7F7F7;
     border-radius: 5px;
     color: #FF6060;

@@ -1,6 +1,5 @@
 .about {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-inline: 50px;
