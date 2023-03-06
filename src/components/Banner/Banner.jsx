@@ -1,11 +1,10 @@
-import image from '../../assets/sea.png'
 import './banner.css'
 
-function Banner() {
+function Banner(props) {
   return (
     <div className="banner-component">
-      <img src={image} alt="Falaise" />
-      <h1> Chez vous, partout et ailleurs </h1>
+      <img src={props.image} alt="Falaise" />
+      <h1> {props.imageText} </h1>
     </div>
   )
 }
