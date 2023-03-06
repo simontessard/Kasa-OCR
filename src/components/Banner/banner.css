@@ -10,6 +10,10 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
+.banner-component {
+    position: relative;
+}
+
 @media only screen and (max-width : 720px) {
     h1 {
         left: 40%;
