@@ -11,7 +11,17 @@ h1 {
 }
 
 .banner-component {
+    margin-block: 60px;
+    padding-inline: 100px;
     position: relative;
+}
+
+.banner-component img {
+    height: 223px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    filter: brightness(50%);
 }
 
 @media only screen and (max-width : 720px) {
