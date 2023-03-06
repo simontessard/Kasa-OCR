@@ -13,7 +13,11 @@ function Collapse(props) {
     <div className="collapse-elements">
       <div onClick={toggle} className="button-bar">
         <button>{props.title}</button>
-        <img src={arrow} alt="Falaise" />
+        <img
+          src={arrow}
+          alt="Flèche"
+          className={`arrow ${open ? 'rotate' : ''}`}
+        />
       </div>
       {open && (
         <div className="toggle">

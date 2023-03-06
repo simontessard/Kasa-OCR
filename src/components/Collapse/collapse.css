@@ -27,6 +27,14 @@
     background: #FF6060;
 }
 
+.button-bar img {
+    transition-duration:0.5s;
+}
+
+.arrow.rotate {
+    transform:rotate(180deg);
+}
+
 .toggle {
     background: #F7F7F7;
     border-radius: 5px;
