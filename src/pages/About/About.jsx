@@ -6,7 +6,7 @@ import image from '../../assets/montains.png'
 function About() {
   return (
     <div>
-      <Banner image={image} />
+      <Banner image={image} alt="Montagnes" />
       <div className="about">
         <Collapse
           title="Fiabilité"
