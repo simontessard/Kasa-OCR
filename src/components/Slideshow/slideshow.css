@@ -1,0 +1,39 @@
+.slideshow  {
+    display: flex;
+    position: relative;
+}
+
+.slideshow-img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-block: 30px;
+    margin-inline: 100px;
+}
+
+.slideshow img:nth-child(3) {
+    position: absolute;
+    top: 40%;
+    right: 120px;
+    transform: rotate(270deg);
+}
+
+.slideshow img:nth-child(4) {
+    position: absolute;
+    top: 40%;
+    left: 120px;
+}
+
+.slideshow-arrow {
+    transform: rotate(90deg);
+    width: 50px;
+    height: 85px;
+}
+
+.slideshow span {
+    position: absolute;
+    color:white;
+    bottom: 60px;
+    left: 50%;
+}
