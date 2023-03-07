@@ -1,9 +1,10 @@
 import './slideshow.css'
+import Banner from '../../components/Banner/Banner'
 
 function Slideshow(props) {
   return (
-    <div className="banner-component">
-      <img src={props.image} alt="Falaise" />
+    <div>
+      <Banner image={props.image[0]} />
     </div>
   )
 }

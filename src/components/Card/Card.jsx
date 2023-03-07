@@ -2,9 +2,9 @@ import './card.css'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 
-function Card({ title }) {
+function Card({ title, id }) {
   return (
-    <NavLink to="/location" className="card">
+    <NavLink to={'/location/' + id} className="card">
       <span>{title}</span>
     </NavLink>
   )

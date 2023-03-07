@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Home from '../../pages/Home/Home'
-import Location from '../../pages/Location'
+import Location from '../../pages/Location/Location'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Error from '../Error/Error'

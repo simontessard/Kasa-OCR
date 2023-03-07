@@ -10,7 +10,7 @@ function Home() {
       <Banner image={image} imageText="Chez vous, partout et ailleurs" />
       <div className="cardContainer">
         {data.map((profile, index) => (
-          <Card key={profile.id} title={profile.title} />
+          <Card key={profile.id} title={profile.title} id={profile.id} />
         ))}
       </div>
     </div>
