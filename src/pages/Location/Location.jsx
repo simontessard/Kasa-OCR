@@ -2,6 +2,7 @@ import './location.css'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import data from '../../data/data.json'
 import { useParams } from 'react-router-dom'
+import star from '../../assets/star.svg'
 
 function Location() {
   let { id } = useParams()
@@ -18,7 +19,7 @@ function Location() {
                   <div>
                     <h2> {location.title} </h2>
                     <p> {location.location} </p>
-                    <div>
+                    <div className="tag-container">
                       {' '}
                       {location.tags.map((tag, i) => {
                         return <span className="location-tag"> {tag} </span>
@@ -29,8 +30,31 @@ function Location() {
                 <div className="location-information-right">
                   <div className="location-host">
                     <span>{location.host.name}</span>
+                    <span class="dot"></span>
                   </div>
-                  <span>{location.rating}</span>
+                  <div className="stars-container">
+                    {' '}
+                    {Array.apply(null, { length: location.rating }).map(
+                      (e, i) => (
+                        <img
+                          src={star}
+                          className="location-star rating"
+                          alt=""
+                          key={i}
+                        />
+                      )
+                    )}
+                    {Array.apply(null, { length: 5 - location.rating }).map(
+                      (e, i) => (
+                        <img
+                          src={star}
+                          className="location-star"
+                          alt=""
+                          key={i}
+                        />
+                      )
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
