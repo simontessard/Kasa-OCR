@@ -67,7 +67,21 @@ function Location() {
                 }}
               >
                 <Collapse title="Description" content={location.description} />
-                <Collapse title="Équipements" content={location.equipments} />
+                <Collapse
+                  title="Équipements"
+                  content={
+                    <>
+                      {location.equipments.map((equipement, i) => {
+                        return (
+                          <>
+                            {' '}
+                            {equipement} <br />{' '}
+                          </>
+                        )
+                      })}
+                    </>
+                  }
+                />
               </div>
             </div>
           )
