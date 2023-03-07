@@ -33,4 +33,7 @@ h1 {
         margin: 20px;
         padding-inline: 0;
     }
+    .banner-component img {
+        height: 111px;
+    }
 }
