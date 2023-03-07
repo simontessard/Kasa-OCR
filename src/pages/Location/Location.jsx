@@ -3,6 +3,7 @@ import Slideshow from '../../components/Slideshow/Slideshow'
 import data from '../../data/data.json'
 import { useParams } from 'react-router-dom'
 import star from '../../assets/star.svg'
+import Collapse from '../../components/Collapse/Collapse'
 
 function Location() {
   let { id } = useParams()
@@ -56,6 +57,17 @@ function Location() {
                     )}
                   </div>
                 </div>
+              </div>
+              <div
+                style={{
+                  display: 'flex',
+                  gap: '95px',
+                  'margin-top': '25px',
+                  'margin-inline': '100px',
+                }}
+              >
+                <Collapse title="Description" content={location.description} />
+                <Collapse title="Équipements" content={location.equipments} />
               </div>
             </div>
           )
