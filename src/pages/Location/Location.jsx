@@ -31,7 +31,7 @@ function Location() {
                 <div className="location-information-right">
                   <div className="location-host">
                     <span>{location.host.name}</span>
-                    <span class="dot"></span>
+                    <span className="dot"></span>
                   </div>
                   <div className="stars-container">
                     {' '}
