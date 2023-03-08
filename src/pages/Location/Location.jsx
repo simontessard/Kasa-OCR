@@ -12,7 +12,7 @@ function Location() {
       {data.map((location, i) => {
         if (location.id === id) {
           return (
-            <div>
+            <div key={i}>
               <Slideshow image={location.pictures} title={location.title} />
               <div className="location-information">
                 {' '}
@@ -23,7 +23,12 @@ function Location() {
                     <div className="tag-container">
                       {' '}
                       {location.tags.map((tag, i) => {
-                        return <span className="location-tag"> {tag} </span>
+                        return (
+                          <span key={i} className="location-tag">
+                            {' '}
+                            {tag}{' '}
+                          </span>
+                        )
                       })}{' '}
                     </div>
                   </div>
@@ -66,10 +71,9 @@ function Location() {
                     <>
                       {location.equipments.map((equipement, i) => {
                         return (
-                          <>
-                            {' '}
-                            {equipement} <br />{' '}
-                          </>
+                          <span key={i}>
+                            {equipement} <br />
+                          </span>
                         )
                       })}
                     </>
