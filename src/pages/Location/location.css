@@ -72,7 +72,7 @@
 
 .stars-container {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-top: 25px;
 }
 
@@ -90,6 +90,7 @@
     }
     .location-host {
         margin-top: 25px;
+        text-align: end;
     }
     .location-star {
         width: 25px;

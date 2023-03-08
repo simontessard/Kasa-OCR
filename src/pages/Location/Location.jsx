@@ -79,7 +79,7 @@ function Location() {
             </div>
           )
         } else {
-          return <div> </div>
+          return ''
         }
       })}
     </>

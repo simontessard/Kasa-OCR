@@ -1,6 +1,8 @@
 .slideshow  {
     display: flex;
     position: relative;
+    margin-block: 30px;
+    margin-inline: 100px;
 }
 
 .slideshow-img {
@@ -8,8 +10,6 @@
     width: 100%;
     object-fit: cover;
     border-radius: 25px;
-    margin-block: 30px;
-    margin-inline: 100px;
 }
 
 .slideshow img:nth-child(3) {
@@ -42,7 +42,9 @@
 @media only screen and (max-width : 870px) {
     .slideshow-img {
         height: 335px;
-        margin-inline: 20px;
+    }
+    .slideshow {
+        margin: 20px;
     }
     .slideshow img:nth-child(3) {
         right: 40px;
