@@ -58,14 +58,7 @@ function Location() {
                   </div>
                 </div>
               </div>
-              <div
-                style={{
-                  display: 'flex',
-                  gap: '95px',
-                  'margin-top': '25px',
-                  'margin-inline': '100px',
-                }}
-              >
+              <div className="collapse-container">
                 <Collapse title="Description" content={location.description} />
                 <Collapse
                   title="Équipements"

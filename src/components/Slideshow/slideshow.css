@@ -38,3 +38,16 @@
     bottom: 60px;
     left: 50%;
 }
+
+@media only screen and (max-width : 870px) {
+    .slideshow-img {
+        height: 335px;
+        margin-inline: 20px;
+    }
+    .slideshow img:nth-child(3) {
+        right: 40px;
+    }
+    .slideshow img:nth-child(4) {
+        left: 40px;
+    }
+}

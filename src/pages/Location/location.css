@@ -1,7 +1,7 @@
 .location-information {
     margin-inline: 100px;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     color: #FF6060;
 }
@@ -74,4 +74,41 @@
     display: flex;
     justify-content: end;
     margin-top: 25px;
+}
+
+.collapse-container {
+    display: flex;
+    flex-direction: row;
+    gap:95px;
+    margin-top: 30px;
+    margin-inline: 100px;
+}
+
+@media only screen and (max-width : 870px) {
+    .location-information-left {
+        flex-basis: 100%;
+    }
+    .location-host {
+        margin-top: 25px;
+    }
+    .location-star {
+        width: 25px;
+        height: 25px;
+    }
+    .stars-container {
+        align-items: center;
+    }
+    .location-information-right {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-basis: 100%;
+        vertical-align: middle;
+    }
+    .collapse-container {
+        flex-direction: column;
+        gap:20px;
+    }
+    .location-information, .collapse-container {
+        margin-inline: 20px;
+    }
 }
