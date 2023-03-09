@@ -50,21 +50,25 @@ class Slideshow extends React.Component {
           src={this.state.pictures[this.state.index]}
           alt={this.state.title}
         ></img>
-        <span>
-          {this.state.index + 1} / {this.state.pictures.length}{' '}
-        </span>
-        <img
-          className="slideshow-arrow"
-          src={image}
-          onClick={this.arrowForward}
-          alt=""
-        ></img>
-        <img
-          className="slideshow-arrow"
-          src={image}
-          onClick={this.arrowBackward}
-          alt=""
-        ></img>
+        {this.state.pictures.length > 1 && (
+          <>
+            <span>
+              {this.state.index + 1} / {this.state.pictures.length}{' '}
+            </span>
+            <img
+              className="slideshow-arrow"
+              src={image}
+              onClick={this.arrowForward}
+              alt=""
+            ></img>
+            <img
+              className="slideshow-arrow"
+              src={image}
+              onClick={this.arrowBackward}
+              alt=""
+            ></img>
+          </>
+        )}
       </div>
     )
   }
