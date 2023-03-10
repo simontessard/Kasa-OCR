@@ -17,16 +17,14 @@
     z-index:2;
 }
 
-.card-filter {
+.card img {
     position:absolute;
     top:0;
     left: 0;
     border-radius: 10px;
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: stretch;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    object-fit: cover;
 }
 
 @media only screen and (max-width : 720px) {

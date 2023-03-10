@@ -14,7 +14,12 @@ function Home() {
       />
       <div className="cardContainer">
         {data.map((profile, index) => (
-          <Card key={profile.id} title={profile.title} id={profile.id} />
+          <Card
+            key={profile.id}
+            title={profile.title}
+            id={profile.id}
+            cover={profile.cover}
+          />
         ))}
       </div>
     </div>
